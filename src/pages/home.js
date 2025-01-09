@@ -10,6 +10,10 @@ import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { trust } from "../trust";
 import { type } from "../types";
 
+import './home.css';
+
+
+
 function Home() {
   const navigate = useNavigate();
   const [currentTypeIndex, setCurrentTypeIndex] = useState(0);

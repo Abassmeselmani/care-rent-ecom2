@@ -1,0 +1,560 @@
+
+
+.about_title{
+    position: absolute;
+    font-size: 80px;
+    color: #FFA500;
+    top: 35%;
+    left: 42%;
+  }
+  .about_automobile{
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    top: 80%;
+    gap: 80px;
+  
+  }
+  .image-container {
+    display: inline-block;
+    position: relative;
+    height: auto;
+    border: 10px #FFA500 solid;
+    left: 2%;
+    
+    height: 450px;
+  }
+  .image-container2{
+    display: inline-block;
+    position: relative;
+    height: auto;
+    border: 10px #FFA500 solid;
+    left: 2%;
+    
+    height: 450px;
+  
+  }
+  
+  .about_automobile-img {
+    width: 400px;
+    height: 450px;
+    filter: brightness(50%);
+    position: relative;
+    
+  }
+  
+  
+  .about_automobile-paragraph{
+    position: relative;
+    top: -5%;
+    font-size: 25px;
+    width: 70%;
+    margin-bottom: 60px;
+    color: rgb(126, 118, 118);
+    margin-left: 40px;
+    line-height: 1.9;
+    font-weight: bold;
+    
+  }
+  
+  /* Your existing styles */
+  .about_automobile-list {
+    list-style: none;
+    font-size: 25px;
+    display: grid;
+    position: relative;
+    top: -15%;
+   
+    grid-template-columns: 1fr 1.5fr;
+    gap: 50px;
+    font-weight: bold;
+    margin-left: 20px;
+    margin: 0;
+  }
+  
+  .car-icon {
+    font-size: 25px;
+    color: #FFA500; /* Orange color for the car icon */
+    background-color: #333; /* Near black background */
+    border-radius: 50%; /* Circle shape */
+    padding: 10px;
+    margin-right: 10px;
+    position: relative;
+    top: 15%;
+    
+    
+    margin-top: 15px;
+  }
+  
+  /* Hover effect */
+  .car-icon:hover {
+    background-color: white; /* White background on hover */
+    border: 3px solid yellow; /* Yellow border on hover */
+    color: yellow; /* Yellow car icon on hover */
+  }
+  
+  .about-rent{
+    position: absolute;
+    font-size: 30px;
+    width: 25%;
+    line-height: 1.6;
+    color: white;
+    left: 4%;
+    top: 35%;
+  }
+  .about-rent span{
+    font-weight: bold;
+    color: #FFA500;
+  }
+  
+  .carStat{
+    position: absolute;
+    top: 180%;
+    
+  }
+  
+  .carStat_img {
+    width: 100vw; /* Ensures the image spans the full screen width */
+    height: auto; /* Maintains the natural aspect ratio */
+    object-fit: cover; /* Ensures the image covers the space without distortion */
+    position: relative; /* Adjust as needed for layout */
+    z-index: -1;
+    filter: brightness(90%) contrast(1.1) saturate(1.2); /* Enhances the image */
+    border-radius: 50px; /* Rounds corners for a modern look */
+    clip-path: inset(0 0 80px 0); /* Cuts 100px from the bottom */
+  }
+  
+  .carStat_info{
+    position: absolute;
+    color: white;
+    top: 20%;
+    left: 40%;
+    font-size: 30px;
+    column-gap: 40px;
+  }
+  
+  .carStat_title{
+    font-size: 30px;
+    position: relative;
+    right: 85px;
+    width: 450px;
+    height: auto;
+    padding: 20px;
+    text-align: center;
+    border: 2px transparent solid;
+    box-shadow: #aa720b;
+    background-color: rgb(209, 201, 187);
+    color: #333;
+    font-weight: bold;
+    border-radius: 30px;
+  
+  }
+  
+  .carStat_descript{
+    position: relative;
+    right: 17%;
+    font-size: 60px;
+    width: 70%;
+  
+  }
+  
+  .carStat_descript span{
+    color: #ffc107;
+    font-weight: bold;
+    text-decoration: underline; 
+    text-underline-offset: 16px;
+  
+  }
+  
+  .statistics {
+    position: absolute;
+    top: 55%;
+    display: grid; /* Use grid layout */
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Responsive columns */
+    gap: 20px; /* Space between grid items */
+    width: 100%;
+    margin: 20px 0;
+    justify-content: center; /* Center the grid */
+    align-items: center; /* Align items vertically */
+  }
+  
+  .statistics_item {
+    display: flex; /* Flex container for individual items */
+    flex-direction: column; /* Stack content vertically */
+    align-items: center; /* Center align content horizontally */
+    text-align: center; /* Align text to center */
+    transition: transform 0.3s ease; /* Smooth transition for hover effect */
+  }
+  
+  .statistics_num {
+    font-size: 100px; /* Larger font size for the letter */
+    
+    color: white;
+    margin-bottom: 10px;
+    font-weight: bold;
+    width: 55%;
+    height: auto;
+    background-color: transparent;
+    text-align: center;
+    border-radius: 30px; /* Rounded corners */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth hover animation */
+  }
+  
+  .statistics_title {
+    position: absolute;
+    top: 75%;
+    width: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    height: 70px;
+    background-color: #ffc107;
+    font-weight: bold;
+    color: black;
+    border-radius: 50px;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth hover animation */
+  }
+  
+  .statistics_item:hover {
+    transform: scale(1.1); /* Slight enlargement on hover */
+  }
+  
+  .statistics_item:hover .statistics_num {
+    background-color: #ffc107; /* Change background color */
+    color: black; /* Change text color */
+  }
+  
+  .statistics_item:hover  .statistics_title {
+    background-color: white; /* Change background color */
+    color: black;
+    
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  .active {
+    display: block;
+  }
+  
+  .beleive {
+    position: absolute;
+    top: 120%;
+    left: 3%;
+    
+   
+    
+    border-radius: 8px;
+    margin-top: 20px;
+  }
+  
+  .beleive_title{
+    position: absolute;
+    font-size: 70px;
+    top: -360px;
+    
+    
+    width: 40%;
+    color: black;
+  
+  }
+  
+  .beleive_title span{
+    color: yellow;
+  }
+  
+  .beleive_links {
+    display: flex;
+    gap: 40px;
+    margin-bottom: 20px;
+    font-size: 30px;
+  }
+  
+  .beleive_links a {
+    text-decoration: none;
+    color: rgb(94, 88, 88);
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .beleive_links a:hover {
+    text-decoration: underline;
+  }
+  
+  .beleive p {
+    display: none; /* Hide all paragraphs by default */
+    margin-bottom: 15px;
+    
+  }
+  
+  .beleive p.active {
+    font-size: 20px;
+    font-weight: bold;
+    display: block;
+    width: 50%;
+    line-height: 1.6;
+    margin-top: 40px; /* Show only the active paragraph */
+  }
+  
+  /* General link styles */
+  .beleive_links a {
+    text-decoration: none;
+    color: #333; /* Default link color */
+    font-size: 26px;
+    margin: 0 10px;
+    padding: 5px 10px;
+    transition: color 0.3s ease, background-color 0.3s ease;
+    border-radius: 5px;
+  }
+  
+  /* Hover effect for links */
+  .beleive_links a:hover {
+    color: #fff; /* Text turns white on hover */
+    background-color: #ff6600; /* Highlight with orange */
+  }
+  
+  /* Selected link styles */
+  .beleive_links a.selected {
+    font-weight: bold; /* Make the selected link bold */
+    color: #fff; /* White text */
+    background-color: #ff0000; /* Red background for the selected link */
+    border: 2px solid #000; /* Optional: Add a black border */
+  }
+  
+  /* Active effect for smoother transitions */
+  .beleive_links a.active {
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .believe_images {
+    position: absolute;
+    top: 330%;
+    left: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    margin-top: 20px;
+  }
+  
+  .believe_images img {
+    width: 150%;
+    max-width: 600px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    transform: scale(0.95);
+    transition: opacity 0.5s ease, transform 0.5s ease; /* Adding smooth transition */
+  }
+  
+  .believe_images img.active {
+    opacity: 1;
+    transform: scale(1); /* Making the image full size when active */
+  }
+  
+  .believe_images img:hover {
+    transform: scale(1.05);
+  }
+  
+  .image-selector {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+  }
+  
+  .circle {
+    width: 17px;
+    height: 17px;
+    background-color: #bbb;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .circle.active {
+    background-color: white;
+    border: 2px solid #333; /* Change the active circle color */
+  }
+  
+  .circle:hover {
+    background-color: #666; /* Hover effect */
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  .active {
+    display: block;
+  }
+  
+  .chooseUs{
+    position: absolute;
+    top: 400%;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .chooseUs-wave1{
+    width: 100vw; /* Ensures the image spans the full screen width */
+    height: auto; /* Maintains the natural aspect ratio */
+    object-fit: cover; /* Ensures the image covers the space without distortion */
+    position: relative; /* Adjust as needed for layout */
+    z-index: -1;
+    filter:  contrast(1.1) saturate(1.2); /* Enhances the image */
+    border-radius: 50px; /* Rounds corners for a modern look */
+    clip-path: inset(0 0 80px 0);
+  
+  }
+  .chooseUs-wave2{
+    position: relative;
+    margin-top: -800px;
+   
+    
+  
+  }
+  
+  .chooseUs-img1{
+    position: absolute;
+    top: 30%;
+    left: 10%;
+    width: 40%;
+    height: 50%;
+    border-radius: 50px;
+    border: 9px rgb(226, 149, 7) solid;
+  }
+  
+  .chooseUs-title{
+    position: absolute;
+    left: 55%;
+    top: 30%;
+    font-size: 70px;
+    font-weight: bold;
+  }
+  
+  .chooseUs-title span{
+    color: yellow;
+    font-weight: bold;
+    text-decoration: underline; 
+    text-underline-offset: 17px;
+  
+  }
+  
+  .chooseUs-descript{
+    position: absolute;
+    left: 53%;
+    top: 40%;
+    font-size: 30px;
+    color: orange;
+    font-weight: bold;
+  
+  
+  }
+  
+  .chooseUs_ranges{
+    position: absolute;
+    top: 50%;
+    left: 55%;
+    
+    width: 30%;
+    
+    
+  
+  }
+  
+  .chooseUs_ranges--name{
+    font-size: 20px;
+    font-weight: bold;
+  }
+  #rangeInput{
+    width: 120%;
+    margin-bottom: 40px;
+    
+  }
+  
+  .value-display{
+    position: absolute;
+    
+    left: 125%;
+    font-size: 25px;
+  
+    margin-top: -64px;
+    
+    
+    
+   
+  }
+  .rangeinput {
+    -webkit-appearance: none; /* Remove default styling */
+    appearance: none; /* Standard reset */
+    width: 100%; /* Full width */
+    height: 8px; /* Height of the range */
+    background: #ccc; /* Gray background for the range */
+    border-radius: 5px; /* Rounded corners for the background */
+    outline: none; /* Remove focus outline */
+  }
+  
+  /* Style the track for WebKit browsers (Chrome, Safari) */
+  .rangeinput::-webkit-slider-runnable-track {
+    background: orange; /* Custom orange track */
+    height: 8px; /* Height of the track */
+    border-radius: 5px; /* Rounded corners */
+  }
+  
+  /* Style the thumb for WebKit browsers */
+  .rangeinput::-webkit-slider-thumb {
+    -webkit-appearance: none; /* Remove default thumb styling */
+    appearance: none;
+    width: 16px; /* Size of the thumb */
+    height: 16px; /* Size of the thumb */
+    background: #000; /* Black thumb */
+    border-radius: 50%; /* Make the thumb circular */
+    cursor: pointer; /* Pointer on hover */
+    margin-top: -4px; /* Center the thumb vertically on the track */
+  }
+  
+  /* Style the track for Firefox */
+  .rangeinput::-moz-range-track {
+    background: orange; /* Custom orange track */
+    height: 8px; /* Height of the track */
+    border-radius: 5px; /* Rounded corners */
+  }
+  
+  /* Style the thumb for Firefox */
+  .rangeinput::-moz-range-thumb {
+    width: 16px; /* Size of the thumb */
+    height: 16px; /* Size of the thumb */
+    background: #000; /* Black thumb */
+    border-radius: 50%; /* Make the thumb circular */
+    cursor: pointer; /* Pointer on hover */
+  }
+  
+  /* Style the track for Microsoft Edge */
+  .rangeinput::-ms-track {
+    background: transparent; /* Transparent to prevent overlapping default styling */
+    border-color: transparent;
+    color: transparent;
+    height: 8px; /* Height of the track */
+  }
+  
+  .rangeinput::-ms-fill-lower {
+    background: orange; /* Custom orange track for the filled part */
+    border-radius: 5px;
+  }
+  
+  .rangeinput::-ms-fill-upper {
+    background: #ccc; /* Gray background for the unfilled part */
+    border-radius: 5px;
+  }
+  
+  .rangeinput::-ms-thumb {
+    width: 16px; /* Size of the thumb */
+    height: 16px; /* Size of the thumb */
+    background: #000; /* Black thumb */
+    border-radius: 50%; /* Make the thumb circular */
+    cursor: pointer; /* Pointer on hover */
+  }

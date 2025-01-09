@@ -7,6 +7,8 @@ import logo2 from "../logos/logo2.png";
 import logo3 from "../logos/logo3.png";
 import logo4 from "../logos/logo4.png";
 import logo5 from "../logos/logo5.png";
+import './gold.css';
+
 
 function Gold() {
   return (

@@ -1,5 +1,12 @@
 import { useState } from "react";
 import FAQ from "./pages/faq";
+import React from 'react';
+
+import './App.css';
+import './/dropdownmenu.css';
+
+
+
 
 import { useNavigate } from "react-router-dom";
 

@@ -1,4 +1,5 @@
 import './App.css';
+import React from 'react';
 import { Routes, Route } from 'react-router-dom'; 
 import Home from './pages/home';
 import Navbar from './components/navbar/navbar';
@@ -6,6 +7,7 @@ import Rent from './pages/rent';
 import Gold from './pages/gold';
 import About from './pages/about';
 import FAQ from './pages/faq';
+
 
 
 

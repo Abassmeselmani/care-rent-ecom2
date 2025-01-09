@@ -1,0 +1,763 @@
+
+body {
+  touch-action: none;
+}
+.home {
+    margin: 0;
+    padding: 0;
+    width: 100vw;       /* Full width of the viewport */
+    height: 100vh;      /* Full height of the viewport */
+    /* Prevent any overflow */
+    position: relative; /* Ensure proper positioning for children */
+  }
+  
+  
+  
+  .image-container {
+    position: relative;
+    padding: 170px; /* Set the container to a relative position for layering */
+    width: 100%; /* Set the width larger than 100% for a wider cadre */
+    height: 100vh; /* Full viewport height */
+    overflow: hidden; /* Prevent image overflow outside the container */
+    margin-left: -10%; /* Center the wider container */
+  }
+
+  
+  .home_image {
+    position: absolute; /* Position the image inside the container */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; /* Ensures the image covers the entire container */
+    object-fit: cover; /* Keeps the image proportions while covering the container */
+    z-index: -1; /* Places the image behind other elements */
+  }
+  
+  
+  .custom-shape-divider-bottom-1731958221 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+  }
+  
+  .custom-shape-divider-bottom-1731958221 svg {
+    position: relative;
+    display: block;
+    width: calc(158% + 1.3px);
+    height: 336px;
+  }
+  
+  .custom-shape-divider-bottom-1731958221 .shape-fill {
+    fill: #cc8f2c;
+  }
+  
+  .home__image2 {
+    position: absolute;        /* Keep the image fixed in the viewport */
+    bottom:-20%;           /* Distance from the bottom of the screen */
+    right: 30px;            /* Distance from the right of the screen */
+    z-index: 10;            /* Ensure it stays above other content */
+    width: 950px;           /* Image width */
+    height: auto;           /* Adjust height based on width */
+    object-fit: cover;      /* Make sure it covers the area without distortion */
+    pointer-events: none;   /* Prevents the image from blocking interactions */
+  }
+
+ 
+  @media (mmax-width: 768px) {
+    .home__image2 {
+      .home__image2 {
+        width: 650px;        /* Smaller image for smaller screens */
+        right: 40px;         /* Adjust position a bit for smaller screens */
+        bottom: 10px;        /* Adjust the bottom spacing */
+      }
+      
+    }
+  }
+  
+  .descriptt {
+    position: absolute;        /* Fix it in place */
+    top: 40%;               /* Centered vertically */
+    left: 2%;               /* Left position for larger screens */
+    font-size: 30px;        /* Default font size for larger screens */
+    animation: fadeSlideIn 1s ease-in-out infinite;
+    animation-delay: 0s;    /* Start immediately */
+    animation-iteration-count: infinite; /* Keeps repeating */
+    animation-duration: 5s; /* The full animation cycle repeats every 5 seconds */
+    pointer-events: none;   /* Prevents the description from blocking interactions */
+    z-index: 100;           /* Ensure it stays above the content */
+  }
+  
+  /* Keyframes for fade and slide effect */
+  @keyframes fadeSlideIn {
+    0% {
+      opacity: 0;
+      transform: translateY(-20px); /* Slide up */
+    }
+    20% {
+      opacity: 1; /* Fade fully visible */
+      transform: translateY(0); /* Settle in place */
+    }
+    80% {
+      opacity: 1; /* Remains visible */
+    }
+    100% {
+      opacity: 0; /* Fade out before the next cycle */
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .descriptt {
+      font-size: 20px; /* Adjust font size for smaller screens */
+      top: 50%;         /* Center more for mobile */
+      left: 10%;        /* Add padding for better mobile positioning */
+      width: 80%;       /* Ensure it doesn't overflow */
+      text-align: center; /* Center-align text */
+      animation-duration: 5s; /* Keep animation duration consistent */
+    }
+  
+    /* .home__image2 adjustments for smaller screens */
+    .home__image2 {
+      width: 650px;        /* Smaller image for smaller screens */
+      right: 40px;         /* Adjust position a bit for smaller screens */
+      bottom: 10px;        /* Adjust the bottom spacing */
+    }
+  }
+  
+  .home__title {
+    font-size: 40px;
+    color: white;
+    font-weight: bold;
+  }
+  
+  .home__descript {
+    color: white;
+    font-size: 60px;
+  }
+  
+  .home__descript span {
+    color: #FFA500;
+  }
+  
+  @media (max-width: 768px) {
+    .descriptt {
+      position: absolute;
+      width: 90%; /* Fit to smaller screens */
+      left: 50%; /* Center horizontally */
+      top: 40%;
+      font-size: medium;
+      transform: translate(-50%, -50%); /* Adjust for perfect centering */
+      text-align: center;
+    }
+    .home__info{
+      font-size: 110%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+  
+  .home__info {
+    position: relative;
+    top: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    
+  }
+  .home__info span{
+    color: rgb(221, 221, 6);
+    text-decoration: underline;
+    text-underline-offset: 25px;
+  }
+  @media (max-width: 768px) {
+   
+    .home__info{
+      font-size: 150%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      top: 130%;
+    }
+  }
+  
+  
+  .trust {
+    display: grid;                  /* Use grid for layout */
+    grid-template-columns: repeat(2, 1fr); /* Create 2 columns */
+    gap: 90px;                       /* Space between items */
+    padding: 50px 0;
+    margin-top: 30px;
+    position: absolute;
+    top: 150%;
+    left: 15%;
+    width: 80%;                      /* Ensure the grid takes up a reasonable width */
+    max-width: 1200px;               /* Optional: Set a max width to prevent it from stretching too much */
+    justify-content: center;         /* Center the grid */
+  }
+  
+  .trust-item__image {
+    width: 300px;                     /* Make images fill their grid cell */
+    height: 300px;                   /* Fixed height */
+    object-fit: cover;               /* Ensure the image fills the space without distortion */
+    border-radius: 50%;              /* Circular images */
+    margin-bottom: 15px;
+    transition: box-shadow 0.3s ease, filter 0.9s ease;
+    
+  }
+  .trust-item__image:hover {
+    box-shadow: 0 0 20px 10px orange; /* Glowing border effect */
+    filter: brightness(1.3);                          /* Brighten the image itself */
+  }
+  
+  .trust-item__description {
+    font-size: 25px;
+    color: #333;
+    font-weight: 600;
+    margin-top: 10px;
+    text-align: center;
+  }
+  
+  /* Media query for smaller screens (up to 768px) */
+  @media (max-width: 768px) {
+    .trust {
+      grid-template-columns: repeat(2, 1fr); /* Keep 2 items per row on smaller screens */
+      gap: 40px;                           /* Smaller gap */
+    }
+  
+    .trust-item__image {
+      width: 280px;                         /* Fill the available space */
+      height: 280px;                       /* Adjust image size for small screens */
+    }
+  }
+  
+  /* Media query for very small screens (up to 480px) */
+  @media (max-width: 480px) {
+    .trust {
+      grid-template-columns: 1fr 1fr; /* Single column layout for very small screens */
+    }
+  
+    .trust-item__image {
+      height: 150px;
+      width: 130px;  /* Adjust image size further for even smaller screens */
+    }
+    .home__image2 {
+      width: 450px;        /* Smaller image for smaller screens */
+      right: -50px;         /* Adjust position a bit for smaller screens */
+      bottom: -10px;        /* Adjust the bottom spacing */
+    }
+    .home__info{
+      font-size: 150%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      top: 25%;
+    }
+    .home__bmw{
+      
+      max-width: 102%;
+      margin-left: -10px;
+    }
+    .offer_title{
+      margin-right: 60px;
+    }
+
+    .offer__h1 {
+      font-size: 30px !important; 
+      width: 90% !important;/* Force it if necessary */
+  }
+  .offer{
+    height: 420vh;
+  }
+  .offer__descript{
+    font-size: 20px !important;
+    width: 90% !important;
+  }
+  .weekoffer{
+    width: 65% !important;
+    margin-left: -50px;
+    margin-top: -2200px;
+    position: absolute;
+    top: 70% !important;
+
+   
+  }
+  .Dailyrent{
+    width: 65% !important;
+    margin-left: -290px;
+    margin-top: 600px;
+    position: absolute;
+    top: 10% !important;
+     }
+
+  .offer__btn{
+    position: absolute;
+    top: 50%;    
+    left: 20%;
+    
+  }
+  .mercedes__image4{
+    width: 100% !important;
+    height: 400px !important;
+    position: absolute;
+    left: -1% !important;
+  }
+
+  .provide__title{
+    width: 60%;
+    font-size: 30px !important;
+    font-weight: bold !important;
+    padding: 20 !important;
+    
+  }
+
+  .provide__h1{
+    width: 550% !important;
+  
+    
+    
+    font-size: 30px !important;
+  }
+
+  .type-title{
+    width: 100% !important;
+    font-size: 32px !important;
+    position: absolute;
+    left: 27% !important;
+    margin-top: 60px;
+    
+  }
+
+  .type-descript{
+    font-size: 20px !important;
+    margin-left: -40px !important;
+  }
+
+  .next-type-btn{
+    font-size: 25px !important;
+    background-color: white !important;
+    display: flex;
+    justify-content: space-between !important;
+  
+   
+  }
+
+  .prev-type-btn{
+    font-size: 25px !important;
+    background-color: white !important;
+    display: flex;
+    justify-content: space-between !important;
+   
+    
+
+    
+  }
+
+  .availabebtn{
+    position: absolute;
+    left: 15% !important;
+    top: 100%;
+    
+    
+
+  }
+
+  .mayback_img{
+    width: 100% !important;
+  }
+  .contact{
+    width: 30%;
+    font-size: 30px !important;
+
+  }
+  .message-icon{
+    width: 23% !important;
+  }
+
+
+
+
+
+
+
+
+
+
+ 
+  
+   
+  }
+  
+  /* Media query for larger screens */
+  @media (min-width: 1024px) {
+    .trust {
+      grid-template-columns: repeat(4, 1fr); /* 4 items per row on larger screens */
+    }
+  
+    .trust-item__image {
+      height: 350px;    /* Increase image size on larger screens */
+    }
+  }
+  .Bmw {
+    position: relative;
+    width: 100%; /* Full screen width for the black background */
+    height: auto;
+   
+    background: linear-gradient(to bottom, white, orange, rgb(83, 51, 10) ,  rgb(54, 22, 4));
+  
+   
+    display: flex;
+     /* Center the car vertically */
+    padding: 50px 0;
+    top: 200%; /* Optional padding for spacing */
+  }
+  
+  .home__bmw {
+    width: 800px; /* Fixed width for the car image */
+    height: 500px; /* Maintain aspect ratio */
+  }
+  
+  .offer {
+    position: relative;
+    top: 190%;
+    width: 100%;
+    background-color: rgb(110, 69, 14);
+    background: linear-gradient(to bottom ,rgb(136, 102, 7), rgb(54, 22, 4)  , rgb(136, 102, 7) ); /* Keep the existing background color */
+    padding: 50px 20px; /* Add padding for better spacing */
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    gap: 20px; /* Maintain gap between elements */
+    align-items: flex-start; /* Align everything to the left */
+  }
+  
+  .offer_title {
+    font-size: 30px;
+    text-align: left; /* Align text to the left */
+    height: auto; /* Allow text height to adjust */
+    color: rgb(128, 120, 120); /* Keep the text color */
+    padding: 10px 20px; /* Add padding for better spacing */
+    
+    border-radius: 10px; 
+    background-color: rgb(43, 15, 4);/* Slightly rounded edges */
+  }
+  
+  .offer__h1 {
+    font-size: 60px;
+    color: whitesmoke;
+    margin: 0;
+    
+   
+    
+    text-align: left; /* Align text to the left */
+    width: 40%; /* Stretch to take full width */
+  }
+  
+  .offer__h1 span {
+    color: yellow; /* Highlight the span text with yellow */
+    font-weight: bold;
+    text-decoration: underline; 
+    text-underline-offset: 17px;
+  }
+  
+  .offer__descript {
+    font-size: 23px;
+    line-height: 1.8; /* Improve readability with better line spacing */
+    color: whitesmoke; /* Keep the text color */
+    text-align: left; /* Align description text to the left */
+    width: 30%; /* Ensure it takes full width */
+    display: flex;
+    flex-direction: column; /* Ensure sentences are under each other */
+    gap: 10px; /* Add spacing between sentences */
+  }
+  
+  .offer__btn {
+    background-color: yellow;
+    color: black;
+    font-weight: bold;
+    border: 2px solid orange;
+    font-size: 18px;
+    padding: 25px 35px;
+    border-radius: 40px; /* Slightly rounded button */
+    cursor: pointer;
+    text-align: left; /* Keep button aligned to the left */
+    margin-top: 10px;
+    margin-left: 20px;
+  }
+  
+  .offer__btn:hover {
+    background-color: transparent;
+    border: 9px solid yellow;
+    color: yellow;
+  }
+  .weekoffer {
+    position: relative;
+    top: 109%;
+    left: 60%;
+    transform: translateX(-50%); /* Correctly center the box horizontally */
+    background: rgba(0, 0, 0, 0.6); /* Semi-transparent dark background */
+    padding: 30px 40px; /* Add padding inside the box */
+    border-radius: 12px; /* Rounded corners */
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3); /* Add shadow for a 3D effect */
+    text-align: left; /* Align text to the left */
+    width: 20%;
+    height: auto;
+    border: 15px solid orange;
+    align-items: center;/* Add width to avoid container stretching too much */
+  }
+  
+  .weekoffer_title {
+    font-size: 50px;
+    margin-bottom: 50px; /* Big space between title and list */
+    color: #ffc107; /* Stylish yellow for the title */
+    font-family: "Georgia", serif; /* Elegant font */
+    text-align: center; /* Center the title */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Add a shadow */
+  }
+  
+  .weekoffer_list {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    gap: 20px;
+    text-align: center; /* Space between items */
+  }
+  
+  .weekoffer_item {
+    display: flex;
+    align-items: center; /* Align checkmark and text vertically */
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    font-family: "Arial", sans-serif;
+    line-height: 1.5; /* Add spacing between lines */
+  }
+  
+  .checkmark {
+    /* Green background for checkmark circle */
+    width: 30px;
+    height: 30px;
+    background-color: transparent; /* Green color */
+    border-radius: 50%; /* Circular shape */
+    display: flex;
+    justify-content: center; /* Center the checkmark */
+    align-items: center; /* Center the checkmark */
+    margin-right: 10px; /* Space between checkmark and text */
+  }
+  
+  .checkmark::after {
+    content: "✔"; /* Only the checkmark symbol */
+    color: orange; /* White color for the checkmark */
+    font-size: 20px; /* Adjust size of the checkmark */
+  }
+  .Dailyrent {
+    position: relative;
+    top: 40%;
+    left: 73%;
+    width: 300px; /* Set a fixed width for the container */
+    padding: 20px; /* Add padding inside the box */
+    border: 19px white solid;
+    font-size: 30px;
+    background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent background */
+    border-radius: 10px; /* Optional rounded corners */
+    display: flex;
+    flex-direction: column; /* Stack the items vertically */
+    justify-content: center; /* Vertically center the content */
+    align-items: center; /* Horizontally center the content */
+    gap: 20px; /* Space between the h1 and p elements */
+  }
+  
+  .Dailyrent__title {
+    margin: 30px;
+    color: white;
+    font-size: 40px; /* Remove default margin from h1 */
+  }
+  
+  .Dailyrent p {
+    margin: 0; /* Remove default margin from p */
+    text-align: center;
+    color: wheat;
+    font-size: 20px; /* Ensure the text is centered inside the p */
+  }
+  
+  .mercedes__image4{
+    position: relative;
+    width: 800px;
+    height: 500px;
+    top: 50%;
+    left: 45%;
+    
+  }
+  .mercedes{
+    position: relative;
+    width: 100%; /* Full screen width for the black background */
+    height: auto;
+    top: 50%;
+  
+    
+   
+    background: linear-gradient(to bottom, white, orange, rgb(83, 51, 10) ,  rgb(54, 22, 4));
+  
+  }
+  
+  .provides{
+    position: relative;
+    top: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content:center ;
+    align-items: center;
+    gap: 40px;
+    
+  
+  }
+  .provides p{
+    font-size: 40px;
+    border: 9px orange solid;
+    background-color: white ;
+    color: black;
+    font-weight: bold;
+    
+  
+    text-align: center;
+    padding: 20px 40px;
+    border-radius: 30px;
+   
+  }
+  .provides h1{
+    font-size: 60px;
+    max-width: 60%;
+    
+  }
+  .provide_span {
+    color: yellow; /* Yellow text for the span */
+    font-weight: bold;
+    text-decoration: underline; 
+    text-underline-offset: 17px; /* Make the span text bold */
+  }
+  /* Style for the "type" container */
+  .type {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center; /* Center align items horizontally */
+    padding: 40px 20px;
+    background-color: #f9f9f9; /* Light background for contrast */
+    border-radius: 10px;
+  }
+  .type-image{
+    position: relative;
+    width: 90%;
+    left: 8%;
+  }
+  .type-title{
+    position: relative;
+    left: 40%;
+    top: -10%;
+    
+  }
+  .type p{
+    font-size: 150%;
+    border: 8px orange solid;
+    position: relative;
+    top: -10%;
+    width: 70%;
+    left: 15%;
+  }
+  .next-type-btn{
+    position: absolute;
+    top: 92%;
+    left: 60%;
+    padding: 30px;
+    font-size:290%;
+    border-radius: 80px;
+    background-color: #FFA500;
+   
+   
+  
+    
+  }
+  .prev-type-btn{
+    position: absolute;
+    top: 92%;
+    padding: 30px;
+    font-size: 290%;
+    border-radius: 80px ;
+    background-color: #FFA500;
+    right: 55%;
+  }
+  
+  
+  .availabebtn{
+    position: absolute;
+    bottom: -11%;
+    padding:40px ;
+    border-radius: 50px;
+    font-size: 20px;
+    left: 43%;
+    background-color: #ffc107;
+    border: 2px solid #ffc107;
+    font-weight: bold;
+  }
+  .availabebtn:hover{
+    background-color: white;
+    border: 9px solid rgb(252, 252, 28);
+    color: #FFA500;
+  }
+  
+  .mayback {
+    position: relative;
+    top: 100%;
+    width: 100vw; /* Full width of the viewport */
+    height: 500px;
+    background: linear-gradient(to top, darkblue, white); /* Keep the height as specified */
+   
+    overflow: hidden; 
+  
+  }
+  
+  .mayback_img {
+    width: 60%; /* Keep the specified size */
+    height: 100%; /* Keep the specified size */
+  }
+  .contact{
+    position: relative;
+    top: 110%;
+    font-size: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(73, 33, 10);
+    padding: 150px;
+    border-radius: 90px;
+  }
+  
+  .contact_par {
+    width: 90%;
+    height: auto;
+    background-color: #FFA500;
+    padding: 110px; /* Optional: adds spacing inside the box */
+    border-radius: 10px; /* Optional: adds rounded corners */
+    text-align: center; /* Optional: centers the text inside */
+    margin: 20px auto; /* Centers the box on the page */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-weight: bold;
+    
+    
+  }
+  .message-icon{
+    margin-bottom: -3%;
+    margin-left: 20px;
+   
+    width: 10%;
+    height: 10%;
+    
+  
+  }
+
+  .contact_par a{
+    color: rgb(248, 246, 246);
+  }

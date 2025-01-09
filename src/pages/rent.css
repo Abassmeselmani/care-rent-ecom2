@@ -1,0 +1,106 @@
+
+
+
+.rent_image1{
+    width: 100%;
+    height: 70%;
+    object-fit: cover;
+    filter: brightness(30%);
+    position: absolute; /* Ensures it's treated as a background */
+    z-index: -1; 
+    
+  }
+  .rent_title{
+    position: absolute;
+    color: wheat;
+    bottom: 40%;
+    left: 44%;
+    font-size: 70px;
+    
+  }
+  .collection {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Adjust the gap between the boxes */
+    justify-content: flex-end; /* Align to the right */
+    padding: 20px;
+    position: absolute;
+    top: 80%;
+  }
+  
+  .collection_item {
+    width: 520px;
+    height: 450px;
+     /* Uniform size for all items */
+    background-color: black;
+    border: 2px solid rgb(206, 136, 7);
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 6px black;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .collection_item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+  }
+  
+  .collection_images {
+    width: 100%;
+    height: 350px; 
+    object-fit: cover; 
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+  }
+  
+  .collection_name {
+    font-size: 28px;
+    font-weight: 600;
+    margin: 10px 0;
+    color: #FFA500;
+  }
+  
+  .collection_price {
+    content: '$';
+    font-size: 26px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    color: black;
+    font-weight: bold;
+    margin-bottom: 10px;
+    width: 150px;
+    height: 50px;
+    border: 2px orange solid;
+    background-color: #ffc107;
+    position: relative;
+    top: -90%;
+    right: -70%;
+    
+  }
+  .collection_price::before{
+    content: '$';
+    margin-right: 5px;
+    font-size: 30px;
+  }
+  
+  .collection-price_slash {
+    text-decoration: line-through;
+    color: rgb(150, 145, 145);
+    margin-left: 8px;
+  }
+  .collection_btn{
+    position: relative;
+    top: -12%;
+    padding: 10px;
+    width: 100%;
+    font-size: 30px;
+    background-color: transparent;
+    color: yellow;
+    font-weight: bold;
+    border: 2px orange solid;
+  }
+  .collection_btn:hover{
+    color: rgb(233, 17, 17);
+  }

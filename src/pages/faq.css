@@ -1,0 +1,228 @@
+
+
+.faq_img1{
+    width: 100%;
+    height: 70%;
+    object-fit: cover;
+    filter: brightness(30%);
+    position: absolute; /* Ensures it's treated as a background */
+    z-index: -1; 
+  
+  }
+  .faq_title{
+    position: absolute;
+    color: white;
+    bottom: 40%;
+    left: 44%;
+    font-size: 70px;
+  
+  }
+  
+  .faq_img2{
+    position: absolute;
+    top: 75%;
+    width: 600px;
+    height: 500px;
+    left: 3%;
+    border-radius: 20px;
+    border:  7px black solid;
+  }
+  .faq_part1{
+    position: absolute;
+    top: 75%;
+    left: 45%;
+    font-size: 30px;
+    
+  }
+  .faq_part1-title{
+    font-size: 60px;
+  }
+  .faq_part1-title span{
+    color: yellow; /* Yellow text for the span */
+    font-weight: bold;
+    text-decoration: underline; 
+    text-underline-offset: 17px; 
+  
+  
+  }
+  .faq_part1-descript{
+    font-size: 25px;
+    color: #666;
+  }
+  
+  .faq_part1-logo{
+    font-weight: bold;
+    margin-left: 0;
+    margin-top: 60px;
+    
+  }
+  
+  .faq_part1-logo::before{
+    content: '?';
+    font-size: 40px;
+    width: auto;
+    height: auto;
+    padding: 10px 20px;
+    border: 2px orange solid;
+    font-weight: bold;
+    background-color: #FFA500;
+    border-radius: 40px;
+    margin-right: 10px;
+    
+    
+  
+  
+  }
+  
+  
+  
+  
+  
+  .faq_mcq {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    position: absolute;
+    top: 120%;
+    left: 45%;
+     
+  }
+  
+  .faq_mcq div {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 25px; /* Box shadow */
+    width: 160%;
+    transition: box-shadow 0.3s ease-in-out, transform 0.2s ease-in-out;
+  }
+  
+  .faq_mcq div:hover {
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Shadow on hover */
+    transform: scale(1.02); /* Slightly enlarge on hover */
+  }
+  
+  .faq_mcq h1 {
+    content: '▼';
+    font-size: 1.4rem; /* Slightly larger font */
+    cursor: pointer;
+    margin: 0;
+    padding: 10px;
+    font-weight: bold;
+    color: #333;
+    border-radius: 6px;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  }
+  
+  .faq_mcq h1.active {
+    content: '▲';
+    background-color: #ffa500; /* Orange background for active question */
+    color: black;
+    font-weight: bold;
+    padding: 25px; /* White text for contrast */
+  }
+  
+  
+  .faq_mcq p {
+    font-size: 1.6rem; /* Bigger font size for readability */
+    color: #555;
+    margin-top: 10px;
+    padding: 50px; /* Increased padding for the paragraph */
+    background-color: #f9f9f9; /* Light gray background for the paragraph */
+    border-radius: 6px; /* Rounded corners */
+    display: none; /* Initially hidden */
+    opacity: 0;
+    width: 50%;
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+    transform: translateY(-10px); /* Subtle animation for appearance */
+  }
+  
+  .faq_mcq p.active {
+    display: block; /* Show the paragraph when active */
+    opacity: 1;
+    transform: translateY(0); /* Reset translation */
+  }
+  
+  .faq_mcq p.hidden {
+    display: none; /* Keep the paragraph hidden when not active */
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+
+  .sendQs{
+    position: absolute;
+    top: 140%;
+    width: 600px;
+    height: 550px;
+    left: 3%;
+    border-radius: 20px;
+    border:  7px black solid;
+    background-color: #FFA500;
+   
+  }
+
+  .sendQs_label{
+
+    display: flex;
+    flex-direction: column;
+    margin: 30px;
+    gap: 30px;
+    
+
+  }  
+  .sendQs_label-title{
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    
+    width: 110%;
+    
+    margin-left: -30px;
+    
+    border-bottom: 3px solid black;
+    
+  }
+  .sendQs_label label {
+    display: block;
+    margin-top: -15px;
+}
+
+.sendQs_label input, 
+.sendQs_label textarea {
+    border-radius: 10px; /* Add a border radius */
+    padding: 10px;      /* Optional: Add padding for better appearance */
+    border: 2px solid black; /* Optional: Add a border for consistency */
+    font-size: 13px; 
+    background-color: black; 
+    color: white;
+    border: 3px solid white;
+      /* Optional: Adjust font size */
+}
+.sendQs_label input::placeholder, 
+.sendQs_label textarea::placeholder {
+    color: orange;  /* Set placeholder text color to orange */
+    font-size: 16px;  /* Set font size for placeholder text */
+}
+
+.sendQs_btn{
+  background-color: black;
+  color: #FFA500;
+  padding: 10px;
+  border-radius: 30px;
+  font-weight: bold;
+  width: 80%;
+  margin-left: 60px;
+  border: 3px solid white;
+}
+
+.sendQs_btn:hover{
+  background-color: orange;
+  color: black;
+  font-weight: bold;
+  
+
+}
+
+ 
+
+

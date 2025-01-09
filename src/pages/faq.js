@@ -2,6 +2,11 @@ import React from "react";
 import image1 from "../images/image13.png";
 import image2 from "../images/image16.png";
 import { useState } from "react";
+
+
+import './faq.css';
+
+
 function FAQ(){
 
     const[activeparagraph  , setactiveparagraph] = useState(null);
@@ -69,6 +74,28 @@ function FAQ(){
                          may result in extra charges, usually calculated as an additional 
                          day's rental fee or an hourly rate.</p>
                 </div>
+
+            </div>
+            <div className="sendQs">
+                <div className="sendQs_label">
+                    <h1 className="sendQs_label-title">Question?</h1>
+                    <label for="sendQs_label-name"></label>
+                    <input type="text" placeholder="Enter your name: "/>
+
+                    <label for="email"></label>
+                    <input type="email" id="email" placeholder="Enter your Email: "/>
+
+                    <label for="message"></label>
+                    <textarea rows="5" cols="20" id="message" placeholder="Ask a Quesion"/>
+
+                    <button className="sendQs_btn">Send Quesion</button>
+
+
+
+                   
+
+                </div>
+
 
             </div>
 

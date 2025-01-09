@@ -13,6 +13,10 @@ import style2 from "../images/wave1.png";
 import style3 from "../images/wave2.png";
 import image7 from "../images/image15.png";
 
+import './about.css';
+
+
+
 
 function About() {
   // State variables
@@ -21,7 +25,7 @@ function About() {
   const [expertMember, setExpertMember] = useState(0);
   const [awardWinner, setAwardWinner] = useState(0);
   const [activeParagraph, setActiveParagraph] = useState(0);
-  const location = useLocation(); // Get the current route
+  const location = useLocation();
   const [selected, setSelected] = useState(location.pathname);
   const [activeimage, setActiveimage] = useState(0);
   const [rentingvans, setrentingvans] = useState(0);

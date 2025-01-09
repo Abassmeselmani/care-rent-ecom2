@@ -2,6 +2,10 @@ import React from "react";
 import image3 from "../images/image13.png";
 import rent from "../rental";
 
+import './rent.css';
+
+
+
 function Rent() {
   
   return (

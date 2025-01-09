@@ -5,6 +5,12 @@ import useWindowSize from "../../utils/useWindowsize";
 import MobileMenu from "./mobile-menu";
 import DropdownMenu from "../../dropdownmenu";
 
+
+import './navbar.css';
+
+
+
+
 function Navbar() {
     const [isMenuOpened, setIsOpenedMenu] = useState(false);
     const [isDropdownOpen, setIsDropdownOpen] = useState(false); // State for dropdown visibility
