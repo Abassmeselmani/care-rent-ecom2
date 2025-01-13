@@ -80,7 +80,7 @@ function FAQ(){
                 <div className="sendQs_label">
                     <h1 className="sendQs_label-title">Question?</h1>
                     <label for="sendQs_label-name"></label>
-                    <input type="text" placeholder="Enter your name: "/>
+                    <input type="text" className="sendQs_label-name" placeholder="Enter your name: "/>
 
                     <label for="email"></label>
                     <input type="email" id="email" placeholder="Enter your Email: "/>

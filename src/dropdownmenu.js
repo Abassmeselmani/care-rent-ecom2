@@ -1,6 +1,7 @@
 import { useState } from "react";
 import FAQ from "./pages/faq";
 import React from 'react';
+import Blog from "./pages/Blog";
 
 import './App.css';
 import './/dropdownmenu.css';
@@ -17,9 +18,15 @@ function DropdownMenu() {
 
     const handleclick= () =>{
         navigate("/faq");
+        
 
         
     } 
+
+    const handleSelect =() =>{
+        navigate("/Blog");
+
+    }
 
     return (
         <ul className="dropmenu">
@@ -32,7 +39,7 @@ function DropdownMenu() {
                 {open && (
                     <ul className="dropdown">
                         <li className="dropdown-item" onClick={handleclick}>FAQ</li>
-                        <li className="dropdown-item">BLOG</li>
+                        <li onClick={handleSelect}  className="dropdown-item">BLOG</li>
                     </ul>
                 )}
             </li>
