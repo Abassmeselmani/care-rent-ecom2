@@ -116,7 +116,7 @@ function Home() {
         </div>
       </div>
 
-      {/* Daily Rent Section */}
+      
       <div className="Dailyrent">
         <h1 className="Dailyrent__title">Daily car rent</h1>
         <p>No free offers</p>
@@ -128,12 +128,10 @@ function Home() {
         <p>Free cancellation</p>
       </div>
 
-      {/* Mercedes Section */}
       <div className="mercedes">
         <img className="mercedes__image4" src={image4} alt="Mercedes" />
       </div>
 
-      {/* Provides Section */}
       <div className="provides">
         <p className="provide__title">Car rental and much more</p>
         <h1 className="provide__h1">
@@ -161,12 +159,10 @@ function Home() {
         </button>
       </div>
 
-      {/* Maybach Section */}
       <div className="mayback">
         <img className="mayback_img" src={image5} alt="Maybach" />
       </div>
 
-      {/* Contact Section */}
       <div className="contact">
         <p className="contact_par">
           <FontAwesomeIcon icon={faEnvelope} className="message-icon" /> Need a Car? Contact us now at{" "}

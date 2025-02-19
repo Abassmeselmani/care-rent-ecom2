@@ -42,7 +42,7 @@
   
   .collection_item:hover {
     transform: scale(1.05);
-    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+    box-shadow: 10px 16px 10px 20px rgba(253, 1, 1, 0.15);
   }
   
   .collection_images {

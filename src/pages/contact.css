@@ -1,0 +1,183 @@
+.contact_image {
+    width: 100%;
+    height: 200%; /* Use a relative height to avoid overflow issues */
+    object-fit: cover;
+    filter: brightness(100%);
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    left: 0;
+    border-bottom: 15px rgb(224, 109, 15) solid;
+}
+
+.contact_image2 {
+    width: 40%; 
+    height: auto;
+    position: absolute;
+    top: 110%;
+    left: 60%; 
+    z-index: 1; 
+    margin: 20px auto; 
+    display: block; 
+}
+
+.contact_bef {
+    display: flex;
+    flex-direction: column; 
+    position: absolute;
+    top: 270%;
+    left: 50%; 
+    transform: translate(-50%, -20%); 
+    align-items: center; 
+    gap: 20px; 
+}
+
+.contact_bef-title {
+    font-size: 30px;
+    width: 450px;
+    height: auto;
+    padding: 20px;
+    text-align: center;
+    border: 2px transparent solid;
+    background-color: rgb(209, 201, 187);
+    color: #333;
+    font-weight: bold;
+    border-radius: 30px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Add shadow for a clean look */
+}
+
+.contact_bef-descript {
+    font-size: 60px; /* Smaller font for a balanced design */
+    width: 90%;
+    text-align: center; /* Center text */
+    color: black;
+    line-height: 1.5; /* Improve readability */
+}
+
+.contact_bef-descript span{
+    color: #ffc107;
+    font-weight: bold;
+    text-decoration: underline; 
+    text-underline-offset: 13px;
+    
+}
+
+.contact_form {
+    position: absolute;
+    top: 380%;
+    width: 90%;
+    max-width: 2000px;
+    margin: 50px auto; /* Center the form */
+    padding: 60px; 
+    border: 2px solid #aaa; /* Box border */
+    border-radius: 30px; /* Rounded corners */
+    background-color: #f9f9f9; /* Light background */
+    box-shadow: 0 4px 8px rgba(253, 3, 3, 0.1); /* Subtle shadow */
+    display: flex;
+    flex-direction: column;
+    gap: 40px; 
+    z-index: 2;
+    background-color: black;
+    border:  8px solid red; 
+}
+
+.contact_form label {
+    font-size: 1px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block; /* Ensure labels are above inputs */
+    color: #333; /* Text color */
+}
+
+.contact_form input, 
+.contact_form select{
+    width: 70%;
+    padding: 24px;
+    margin-bottom: 10px;
+    margin-right: 800px;
+    border: 6px solid rgb(218, 218, 25); /* Input border */
+    border-radius: 5px;
+    font-size: 14px;
+    color: #333;
+    border-radius: 50px;
+    background-color: white;
+
+}
+
+.contact_form textarea {
+    resize: none; /* Prevent resizing */
+}
+
+.contact_form-submit {
+    width: 40%;
+    padding: 15px;
+    background-color: red; /* Button color */
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-left: 450px;
+    border: 4px solid yellow;
+}
+
+.contact_form-submit:hover {
+    background-color: orange;
+    color: red; /* Darker button color on hover */
+}
+.contact_form-department{
+    width: 76% !important;
+}
+
+
+.contact_form-row {
+    display: flex;
+    gap: 10px;
+}
+
+.contact_form-row .contact_form-name,
+.contact_form-row .contact_form-email {
+    width: 70%; 
+}
+
+.contact_form-department-row {
+    display: flex;
+    gap: 10px;
+    justify-content: space-between; /* Ensure proper spacing and alignment */
+}
+
+.contact_form-department-row .contact_form-phone,
+.contact_form-department-row .contact_form-department {
+    flex: 1; /* Make both inputs take up equal width */
+    padding: 24px;
+    margin-bottom: 10px;
+    border: 1px solid white; /* Input border */
+    border-radius: 50px;
+    font-size: 14px;
+    color: #333;
+    background-color: white; /* Light red-pink tone */
+    transition: background-color 0.3s ease;
+    border: 6px solid rgb(241, 94, 8);
+}
+
+.contact_form-department-row .contact_form-phone:not(:last-child),
+.contact_form-department-row .contact_form-department:not(:last-child) {
+    margin-right: 10px; /* Add consistent spacing between fields */
+}
+
+.contact_form-department-row .contact_form-phone:focus,
+.contact_form-department-row .contact_form-department:focus {
+    background-color: white; /* Slightly brighter tone for focus */
+    outline: none;
+    border-color: #ff7f7f; /* Highlight border on focus */
+}
+
+.contact_form-message {
+    border-radius: 50px;
+    padding: 60px;
+    border: 6px solid red;
+}
+
+

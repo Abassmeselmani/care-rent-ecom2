@@ -8,6 +8,8 @@ import Gold from './pages/gold';
 import About from './pages/about';
 import FAQ from './pages/faq';
 import Blog from './pages/Blog';
+import Contact from './pages/contact';
+import Page1 from './pages/pageb1blog';
 
 
 
@@ -26,6 +28,9 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/faq" element={<FAQ />} />
         <Route path="/Blog" element={<Blog />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/pageb1blog" element={<Page1 />} />
+
       </Routes>
     </div>
   );
