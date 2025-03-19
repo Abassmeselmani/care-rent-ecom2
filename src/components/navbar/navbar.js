@@ -72,7 +72,6 @@ function Navbar() {
                     >
                         About
                     </Link>
-                    {/* Dropdown Menu for Pages */}
                     <div
                         className="dropdown-wrapper"
                         onMouseEnter={() => setIsDropdownOpen(true)}
@@ -93,6 +92,13 @@ function Navbar() {
                         className={selected === "/contact" ? "selected" : ""}
                     >
                         Contact
+                    </Link>
+                    <Link
+                        to="/login"
+                        onClick={() => handleSelect("/login")}
+                        className={selected === "/login" ? "selected" : ""}
+                    >
+                        Login
                     </Link>
                 </div>
             )}

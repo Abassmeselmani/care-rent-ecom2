@@ -3,46 +3,52 @@
     top: 80%;
     left: 5%;
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* Create 2 equal-width columns */
-    gap: 40px; /* Space between grid items */
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 40px; 
     padding: 50px 20px;
     width: auto;
     border: 5px solid black;
-    max-width: 1600px; /* Limit width to ensure the layout doesn't stretch too much */
-    margin: 0 auto; /* Center the grid horizontally */
+    max-width: 1600px; 
+    margin: 0 auto; 
 }
 
 .blog-question {
-    display: flex; /* Flexbox layout for side-by-side items */
-    
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 750px; 
+    height: 300px; 
+    overflow: hidden;
     border-radius: 12px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-    overflow: hidden; /* Hide overflow */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-   
-    width: 750px;
-    height: 300px;
 }
 
 .blog-question:hover {
-    transform: translateY(-10px); /* Lift effect on hover */
+    transform: translateY(-10px); 
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
-    border: 4px solid rgb(243, 172, 41); /* Darker shadow on hover */
+    border: 4px solid rgb(243, 172, 41); 
+}
+
+.blog-img-container {
+    width: 100%; 
+    height: 100%; 
+    overflow: hidden; 
 }
 
 .blog-img {
-    width: 50%; /* Each image takes up half the space */
-    height: auto;
-    object-fit: cover; /* Cover the area while maintaining aspect ratio */
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover; 
     border-radius: 15px;
 }
-.blog-img:hover{
+
+.blog-img:hover {
     filter: brightness(30%);
 }
 
-
-
 .blog-descript {
+    margin-bottom: 300px;
     font-size: 25px;
     margin-left: 35px;
     width: 650px;
@@ -57,24 +63,28 @@
     color: rgb(248, 167, 16); 
     cursor: pointer; 
 }
+
 .blog-date {
-    width: 600px; 
-    height: 40px;
-    border: 2px orange solid;
+    width: 20%; 
+    height: auto;
+    border: 2px solid rgb(255, 148, 7);
     text-align: center;
-    background-color: orange;
-    border-radius: 20px;
-    line-height: 40px;
-    position: relative;
-    bottom: -60%;
-    left: -25%;
-    box-sizing: border-box;
+    background-color: gold;
+    font-weight: bold;
+    border-radius: 30px;
+    margin-top: 150px;
+    margin-left: 400px;
+    position: absolute;
+    padding: 10px 10px 10px 10px;
+   
+    
+    
+
+
+
+   
 }
 
-
-
-
-/* Mobile Responsiveness */
 @media (max-width: 768px) {
     .Blog-questions {
         grid-template-columns: 1fr;
@@ -86,20 +96,23 @@
         padding: 20px;
     }
 
+    .blog-img-container {
+        width: 100%; 
+        height: auto;
+    }
+
     .blog-img {
-        width: 100%; /* Make the image take up the full width */
+        width: 100%;
         height: auto;
         border-radius: 12px;
     }
 
     .blog-content {
-        width: 100%; /* Make the description take up full width */
+        width: 100%; 
         padding-left: 0;
     }
 }
-/* .chain-icon{
-    display: none;
-} */
+
 .chain-icon {
     position: absolute;
     padding: 30px;
@@ -107,15 +120,13 @@
     color: black;
     top: 50%;
     left: 26%;
-    transform: translate(-50%, -50%); /* Center the icon */
+    transform: translate(-50%, -50%); 
     font-size: 60px;
-    background-color: gold; /* Gold color for the icon */
-    text-shadow: 0 0 10px gold, 0 0 20px gold, 0 0 30px gold; /* Glowing effect on the icon */
-    
+    background-color: gold; 
+    text-shadow: 0 0 10px gold, 0 0 20px gold, 0 0 30px gold; 
 }
-.chain-icon:hover{
+
+.chain-icon:hover {
     background-color: rgb(53, 34, 5);
     color: gold;
-
 }
-

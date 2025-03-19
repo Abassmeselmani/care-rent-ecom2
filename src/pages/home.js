@@ -32,7 +32,6 @@ function Home() {
 
   return (
     <div className="home">
-      {/* Description Section */}
       <div className="descriptt">
         <p className="home__title">The best way of Renting</p>
         <h1 className="home__descript">
@@ -40,12 +39,10 @@ function Home() {
         </h1>
       </div>
 
-      {/* Main Image Section */}
       <div className="image-container">
         <img className="home_image" src={image} alt="Home" />
       </div>
 
-      {/* Wave Divider */}
       <div className="custom-shape-divider-bottom-1731958221">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none" data-name="Layer 1">
           <path
@@ -55,17 +52,14 @@ function Home() {
         </svg>
       </div>
 
-      {/* Second Image */}
       <img className="home__image2" src={image2} alt="Home Image 2" />
 
-      {/* Info Section */}
       <div className="home__info">
         <h1>
           We compare car rental, <span>prices!</span>
         </h1>
       </div>
 
-      {/* Trust Section */}
       <div className="trust">
         {trust.map((item) => (
           <div key={item.id} className="trust-item">
@@ -95,7 +89,6 @@ function Home() {
         </button>
       </div>
 
-      {/* Weekly Offer Section */}
       <div className="weekoffer">
         <h1 className="weekoffer_title">Weekly Pro Offer</h1>
         <div className="weekoffer_list">
