@@ -1,0 +1,115 @@
+/* Table Styling */
+.cart_table {
+    position: absolute;
+    top: 80%;
+    left: 10%;
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background: white;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.cart_table th, 
+.cart_table td {
+    padding: 15px;
+    border: 1px solid #ddd;
+    text-align: center;
+    font-weight: bold;
+}
+
+.cart_table th {
+    background-color: #222;
+    color: white;
+    font-weight: bold;
+}
+
+.cart_item-image {
+    width: 300px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.Cart_btn{
+    background-color: gold;
+    width: 40%;
+    padding: 20px;
+    border-radius: 30px;
+    font-weight: bold;
+    font-size:20px;
+    margin-left: 120%;
+    border: 2px solid gold;
+}
+
+.Cart_btn:hover{
+    color: gold;
+    background-color: white;
+    border: 4px solid gold;
+}
+
+.cart_empty {
+    font-size: 5rem;
+    position: absolute;
+    top: 70%;
+    left: 30%;
+    color: black;
+    
+    text-align: center;
+}
+
+/* Fix for the total section */
+.total {
+    position: absolute;
+    top: 2400px;
+    left: 10%;
+    width: 80%;  /* Set width similar to the cart table */
+    margin: 20px auto; 
+    background-color: white;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.total_title {
+    font-size: 2.2rem;
+    font-weight: bold;
+    background-color: black;
+    color: gold;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.total_table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.total_table td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: center;
+    font-size: 16px;
+}
+
+
+.total_btn{
+    padding: 15px;
+    margin-left: 70%;
+    font-size: 20px;
+    width: 40%;
+    border-radius: 30px;
+    background-color: gold;
+    font-weight: bold;
+    border: 2px solid gold;
+
+}
+
+.total_btn:hover{
+    color: gold;
+    background-color: white;
+    border: 4px solid gold;
+}

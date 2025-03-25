@@ -1,12 +1,14 @@
-import React from "react";
+import React, { useContext } from "react";
 import image3 from "../images/image13.png";
 import rent from "../rental";
+import { AuthContext } from "../context";
 
 import './rent.css';
 
 
 
 function Rent() {
+  const { addToCart} = useContext(AuthContext);
   
   return (
     <div className="rent">
@@ -22,7 +24,7 @@ function Rent() {
                     <span className="collection-price_slash">{item.wasprice}</span>
                     
                 </div>
-                <button  className="collection_btn">Add to Cart</button>
+                <button onClick={() => addToCart(item)} className="collection_btn">Add to Cart</button>
 
                 </div>
             

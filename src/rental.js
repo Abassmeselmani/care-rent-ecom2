@@ -15,6 +15,7 @@ const rent = [
         imageURL: picture1,
         price: 299,
         wasprice: 399,
+        
     },
     {
         id: "2",

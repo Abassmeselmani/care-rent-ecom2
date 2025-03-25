@@ -17,44 +17,39 @@ import Page5 from './pages/page5blog';
 import Page6 from './pages/page6blog';
 import Login from './pages/login';
 import Register from './pages/register';
-
-
-
-
-
-
+import { AuthProvider } from './context';
+import Cart from './pages/cart';
+import Checkout from './pages/checkout';
 
 
 function App() {
   return (
-    <div className="App">
-      <Navbar />
-       
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/rent" element={<Rent />} />
-        <Route path="/gold" element={<Gold />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/faq" element={<FAQ />} />
-        <Route path="/Blog" element={<Blog />} />
-        <Route path="/contact" element={<Contact />} />
-        <Route path="/pageb1blog" element={<Page1 />} />
-        <Route path="/page2blog" element={<Page2 />} />
-        <Route path="/page3blog" element={<Page3 />} />
-        <Route path="/page4blog" element={<Page4 />} />
-        <Route path="/page5blog" element={<Page5 />} />
-        <Route path="/page6blog" element={<Page6 />} />
-        <Route path="/login" element={<Login />} />
-        <Route path="/register" element={<Register />} />
+    <AuthProvider> 
+      <div className="App">
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/rent" element={<Rent />} />
+          <Route path="/gold" element={<Gold />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/faq" element={<FAQ />} />
+          <Route path="/Blog" element={<Blog />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/pageb1blog" element={<Page1 />} />
+          <Route path="/page2blog" element={<Page2 />} />
+          <Route path="/page3blog" element={<Page3 />} />
+          <Route path="/page4blog" element={<Page4 />} />
+          <Route path="/page5blog" element={<Page5 />} />
+          <Route path="/page6blog" element={<Page6 />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/register" element={<Register />} />
+          <Route path="/cart" element={<Cart />} />
+          <Route path="/checkout" element={<Checkout />} />
 
 
-
-
-
-
-
-      </Routes>
-    </div>
+        </Routes>
+      </div>
+    </AuthProvider>
   );
 }
 
