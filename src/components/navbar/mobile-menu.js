@@ -49,6 +49,22 @@ function MobileMenu({ closeMenu, selected, handleSelect }) {
                 >
                     Contact
                 </Link>
+
+                <Link
+                    to="/cart"
+                    onClick={() => handleSelect("/cart")}
+                    className={selected === "/cart" ? "selected" : ""}
+                >
+                    Cart
+                </Link>
+
+                <Link
+                    to="/login"
+                    onClick={() => handleSelect("/login")}
+                    className={selected === "/login" ? "selected" : ""}
+                >
+                    Login
+                </Link>
             </div>
         </div>
     );

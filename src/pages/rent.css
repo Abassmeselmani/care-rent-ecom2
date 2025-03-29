@@ -104,3 +104,164 @@
   .collection_btn:hover{
     color: rgb(233, 17, 17);
   }
+
+  /* Modal Overlay */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.3); /* Transparent background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000; /* Ensure modal is on top */
+  opacity: 0;
+  animation: fadeIn 0.3s forwards; /* Fade-in animation */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  width: 350px;
+  max-width: 90%;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  transform: scale(0.95);
+  animation: scaleIn 0.3s forwards; /* Scaling animation */
+}
+
+/* Header Section */
+.modal-header {
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 10px;
+  margin-bottom: 15px;
+}
+
+.modal-title {
+  font-size: 22px;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Body Section */
+.modal-body {
+  margin-bottom: 15px;
+}
+
+.modal-message {
+  font-size: 16px;
+  color: #666;
+}
+
+/* Footer Section */
+.modal-footer {
+  margin-top: 20px;
+}
+
+.modal-close-btn {
+  background-color: #bb2323; /* Green */
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.modal-close-btn:hover {
+  background-color: #45a049; /* Darker green on hover */
+}
+
+/* Fade-in and Scale-in animations */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes scaleIn {
+  0% {
+    transform: scale(0.95);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* === ✅ MODAL FOR ITEM ADDED === */
+.added-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+  transition: all 0.3s ease-in-out;
+}
+
+.added-modal-content {
+  width: 500px;
+  padding: 20px;
+  background: #e8f5e9;
+  border-left: 8px solid #2e7d32;
+  border-radius: 10px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.added-modal-title {
+  color: #1b5e20;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.added-modal-message {
+  color: #1b5e20;
+  font-size: 14px;
+}
+
+.added-close-btn{
+  background-color: #bb2323; 
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease-in-out;
+
+}
+
+.added-close-btn:hover{
+  background-color: #FFA500;
+
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+
+
+
+

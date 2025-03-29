@@ -53,7 +53,7 @@
 .checkout-content-title{
     position: absolute;
     top: 100%;
-    width: 50%;
+    width: 40%;
     border: 2px solid  rgb(39, 27, 13);
     margin-left: 20px;
     padding: 20px;
@@ -61,3 +61,183 @@
     color: gold;
     border-radius: 50px;
 }
+
+
+.checkout-content-nameandfname {
+    position: absolute;
+    top: 120%;
+    display: flex;
+    flex-direction: row;
+    margin-left: 25px;
+    gap: 150px; 
+    width: 100%;
+}
+
+.checkout-content-nameandfname-content {
+    width: 45%; /* Adjust width to fit within the container */
+    max-width: 250px;
+    padding: 20px;
+    border-radius: 30px; /* Prevent them from shrinking too much */
+}
+
+.checkout-content-nameandfname-content:hover{
+    border: 3px solid gold;
+}
+
+.checkout-content2 {
+    position: absolute;
+    top: 130%;
+    left: 2%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px; 
+}
+
+.checkout-content2 input {
+    width: 220%; 
+    padding: 17px;
+    font-size: 18px; /* Increase input text size */
+    border: 2px solid #ddd;
+    border-radius: 90px;
+    margin-bottom: 5px;
+}
+
+.checkout-content2 label {
+    font-size: 22px; /* Make label text big */
+    font-weight: bold;
+    color: black;
+    display: block; /* Ensures label is under input */
+    text-align: left;
+}
+
+.checkout-content2 input:hover{
+    border: 3px solid gold;
+}
+.checkout-content2-additional {
+    font-size: 26px;
+    font-weight: bold;
+    margin-bottom: 15px; 
+    color: black;
+}
+
+
+
+.checkout-content2 textarea {
+    width: 180%;
+    max-width: 1200px; 
+    height: 120px; 
+    font-size: 18px; 
+    padding: 50px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    resize: vertical;
+    border-radius: 30px;
+}
+.checkout-content2 textarea:hover{
+    border: 2px solid gold;
+}
+
+
+
+.yourorder-title{
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    width: 40%;
+    border: 2px solid  rgb(39, 27, 13);
+    margin-left: 90px;
+    padding: 20px;
+    background-color: rgb(39, 27, 13);
+    color: gold;
+    border-radius: 50px;
+
+}
+
+/* Style for the Order Summary Table */
+.yourorder_table {
+    position: relative;
+    top: 1000px;
+    left: 25%;
+    width: 100%;
+    max-width: 500px;
+    border-collapse: collapse;
+    margin: 20px auto;
+    font-size: 18px;
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.yourorder_table td {
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+    text-align: left;
+    font-weight: bold;
+}
+
+.yourorder_table tr:last-child td {
+    border-bottom: none;
+}
+
+/* Style for the Place Order Button */
+.yourrrorder-btn {
+    position: absolute;
+    display: block;
+    top: 130%;
+    left: 60%;
+    width: 100%;
+    max-width: 500px;
+    padding: 15px;
+    background-color: gold;
+    color: black; /* Dark Red */
+    
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    margin: 20px auto;
+}
+
+.yourrrorder-btn:hover {
+    background: #b71c1c; /* Darker Red */
+    transform: scale(1.05);
+}
+
+
+/* General link styling */
+.checkout-steps a p {
+    text-decoration: none;
+    color: rgb(73, 66, 66);  /* Set initial color to gray */
+    position: relative;
+    padding-bottom: 5px;
+    filter: brightness(30%);  /* Low brightness when inactive */
+    transition: filter 0.3s ease, color 0.3s ease;  /* Smooth transition for both brightness and color */
+  }
+  
+  /* Active link styling */
+  .checkout-steps .active-link {
+    filter: brightness(100%); /* Full brightness when active */
+    color: black; /* Set the text color to black when active */
+  }
+  
+  /* Hover effect to make the links brighter when hovered */
+  .checkout-steps a:hover {
+    filter: brightness(90%);  /* Slightly brighter on hover */
+    color: black;  /* Change color to black when hovered */
+  }
+  
+  /* Style for the numbers in the checkout-steps */
+  .checkout-steps a p {
+    color: inherit; /* Inherit the color of the link */
+    filter: inherit; /* Inherit the filter (brightness) */
+  }
+  
+  /* When the link is active, both number and text color change */
+  .checkout-steps .active-link p {
+    color: black; /* Set the number color to black when the link is active */
+  }
+  
+  

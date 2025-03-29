@@ -1,7 +1,7 @@
 /* Table Styling */
 .cart_table {
     position: absolute;
-    top: 80%;
+    top: 100%;
     left: 10%;
     width: 80%;
     margin: 20px auto;
@@ -53,7 +53,7 @@
 .cart_empty {
     font-size: 5rem;
     position: absolute;
-    top: 70%;
+    top: 90%;
     left: 30%;
     color: black;
     
@@ -98,7 +98,7 @@
 
 .total_btn{
     padding: 15px;
-    margin-left: 70%;
+    margin-left: 50%;
     font-size: 20px;
     width: 40%;
     border-radius: 30px;
@@ -113,3 +113,81 @@
     background-color: white;
     border: 4px solid gold;
 }
+
+.login-message {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh; /* Full height */
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)); /* Soft gradient background */
+    color: #333;
+  }
+  
+  .login-message-container {
+    background: white;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    width: 80%;
+    max-width: 600px;
+    text-align: center;
+  }
+  
+  .login-message h1 {
+    font-size: 36px;
+    font-weight: 600;
+    color: #1a202c; /* Deep, professional color */
+    margin-bottom: 20px;
+    line-height: 1.4;
+    letter-spacing: 1px;
+  }
+  
+  .login-message p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 30px;
+  }
+  
+  .login-message button {
+    padding: 12px 30px;
+    background-color: #007bff;
+    color: white;
+    font-size: 18px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .login-message button:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+  }
+  
+  .login-message button:focus {
+    outline: none;
+    box-shadow: 0 0 5px 2px rgba(0, 123, 255, 0.5); 
+  }
+  
+  .empty-icon {
+    position: absolute;
+    top: 75%;
+    left: 40%;
+    font-size: 200px;
+    color: black;
+    text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5); 
+    transition: transform 0.3s ease, color 0.3s ease; 
+    animation: bounce 1.5s infinite alternate ease-in-out; 
+}
+
+.empty-icon:hover {
+    transform: scale(1.1); 
+    color: rgb(255, 0, 0); 
+}
+
+@keyframes bounce {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-10px); }
+}
+

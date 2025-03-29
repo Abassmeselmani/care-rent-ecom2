@@ -7,10 +7,13 @@ import logo2 from "../logos/logo2.png";
 import logo3 from "../logos/logo3.png";
 import logo4 from "../logos/logo4.png";
 import logo5 from "../logos/logo5.png";
+import { useNavigate } from "react-router-dom";
 import './gold.css';
 
 
 function Gold() {
+
+  const navigate = useNavigate();
   return (
     <div className="reward">
       <img className="reward_image1" src={image3} alt="Reward Image" />
@@ -41,7 +44,7 @@ function Gold() {
             <li>Vehicle leasing</li>
             <li>Personal public transport</li>
           </ul>
-          <button className="containers_silver-btn">Order Now</button>
+          <button onClick={() => navigate("/rent")} className="containers_silver-btn">Order Now</button>
         </div>
 
         {/* Gold Container */}
@@ -60,7 +63,7 @@ function Gold() {
             <li>Tourist Tax</li>
             <li>Personal public transport</li>
           </ul>
-          <button className="containers_silver-btn">Order Now</button>
+          <button onClick={() => navigate("/rent")} className="containers_silver-btn">Order Now</button>
         </div>
 
         {/* Diamond Container */}
@@ -78,7 +81,7 @@ function Gold() {
             <li>Vehicle leasing</li>
             <li>Personal public transport</li>
           </ul>
-          <button className="containers_silver-btn">Order Now</button>
+          <button onClick={() => navigate("/rent")} className="containers_silver-btn">Order Now</button>
         </div>
       </div>
       <div className="rover">

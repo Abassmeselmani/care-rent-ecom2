@@ -46,7 +46,7 @@ export function AuthProvider({ children }) {
       setUser(currentUser);
       setLoading(false);
     });
-    return () => unsubscribe(); // Cleanup on unmount
+    return () => unsubscribe();
   }, []);
 
   return (
